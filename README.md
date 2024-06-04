@@ -11,7 +11,7 @@ nuclei -t http/wordpress-single-plugin-check.yaml -u https://example.com -V SLUG
 Output example:
 
 ```console
-                    __     _
+                     __     _
    ____  __  _______/ /__  (_)
   / __ \/ / / / ___/ / _ \/ /
  / / / / /_/ / /__/ /  __/ /
@@ -49,5 +49,5 @@ jq -r -s '[.[]["extracted-results"][]] | unique | join(", ")' plugins_with_katan
 Output example:
 
 ```console
-complianz-gdpr, ninja-forms, wp-meta-and-date-remover
+complianz-gdpr, ninja-forms, wp-meta-and-date-remover, elementor
 ```
